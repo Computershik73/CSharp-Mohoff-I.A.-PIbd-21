@@ -1,0 +1,13 @@
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\bin\Debug\Laba2.exe.config
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\bin\Debug\Laba2.exe
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\bin\Debug\Laba2.pdb
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\bin\Debug\NLog.dll
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\bin\Debug\NLog.xml
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba7.csprojResolveAssemblyReference.cache
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba2.Form2.resources
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba2.FormDelectCar.resources
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba7.csproj.GenerateResource.Cache
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba7.csproj.CoreCompileInputs.cache
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba2.exe
+C:\Users\amile\Desktop\Эгов\Laba7\Laba2\obj\Debug\Laba2.pdb
