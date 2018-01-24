@@ -95,9 +95,9 @@ public override int MaxSpeed
             this.Weight = weight;
             this.countPassengers = 0;
             this.countToplivo = 0;
-            Random rand = new Random();
-            startPosX = rand.Next(10, 200);
-            startPosY = rand.Next(10, 200);
+            //Random rand = new Random();
+            //startPosX = rand.Next(10, 200);
+            //startPosY = rand.Next(10, 200);
         }
         public override void moveCar(Graphics g)
         {

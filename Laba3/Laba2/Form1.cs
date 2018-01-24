@@ -16,7 +16,7 @@ namespace Laba2
         Color dopColor;
         int maxSpeed;
         int maxCountPass;
-        int maxCountTop;
+        int maxCountCapa;
         int weight;
 
         private ITransport inter;
@@ -62,7 +62,7 @@ namespace Laba2
             {
                 return false;
             }
-            if (!int.TryParse(textBoxToplivo.Text, out maxCountTop))
+            if (!int.TryParse(textBoxToplivo.Text, out maxCountCapa))
             {
                 return false;
             }
@@ -77,7 +77,7 @@ namespace Laba2
         {
             if (checkFields())
             {
-                inter = new Military(maxSpeed, maxCountPass, maxCountTop, weight, color);
+                inter = new Military(maxSpeed, maxCountPass, maxCountCapa, weight, color);
                 Bitmap bmp = new Bitmap(pictureBoxDraw.Width, pictureBoxDraw.Height);
                 Graphics gr = Graphics.FromImage(bmp);
                 inter.drawCar(gr);
@@ -109,7 +109,7 @@ namespace Laba2
         {
             if (checkFields())
             {
-                inter = new Tank(maxSpeed, maxCountPass, maxCountTop, weight, color, checkBoxFrontSpoiler.Checked,
+                inter = new Tank(maxSpeed, maxCountPass, maxCountCapa, weight, color, checkBoxFrontSpoiler.Checked,
                 checkBoxBackSpoiler.Checked, checkBoxSideSpoiler.Checked, dopColor);
                 Bitmap bmp = new Bitmap(pictureBoxDraw.Width, pictureBoxDraw.Height);
                 Graphics gr = Graphics.FromImage(bmp);
@@ -122,7 +122,7 @@ namespace Laba2
         {
         }
 
-        private void checkBoxSideSpoiler_CheckedChanged(object sender, EventArgs e)
+        private void textBoxСapacity_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Laba2
 {
-    interface ITransport
+    public interface ITransport
     {
+       
         void moveCar(Graphics g);
 
         void drawCar(Graphics g);
