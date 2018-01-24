@@ -95,7 +95,7 @@
             // 
             // textBoxWeight
             // 
-            this.textBoxWeight.Location = new System.Drawing.Point(338, 319);
+            this.textBoxWeight.Location = new System.Drawing.Point(338, 317);
             this.textBoxWeight.Name = "textBoxWeight";
             this.textBoxWeight.Size = new System.Drawing.Size(65, 20);
             this.textBoxWeight.TabIndex = 5;
@@ -129,6 +129,7 @@
             this.checkBoxSideSpoiler.TabIndex = 8;
             this.checkBoxSideSpoiler.Text = "Гусеницы";
             this.checkBoxSideSpoiler.UseVisualStyleBackColor = true;
+            this.checkBoxSideSpoiler.CheckedChanged += new System.EventHandler(this.checkBoxSideSpoiler_CheckedChanged);
             // 
             // buttonSetAuto
             // 
@@ -136,17 +137,17 @@
             this.buttonSetAuto.Name = "buttonSetAuto";
             this.buttonSetAuto.Size = new System.Drawing.Size(127, 41);
             this.buttonSetAuto.TabIndex = 9;
-            this.buttonSetAuto.Text = "Задать военную технику";
+            this.buttonSetAuto.Text = "Задать авто";
             this.buttonSetAuto.UseVisualStyleBackColor = true;
             this.buttonSetAuto.Click += new System.EventHandler(this.buttonSetAuto_Click);
             // 
             // buttonSetGruzovik
             // 
-            this.buttonSetGruzovik.Location = new System.Drawing.Point(596, 89);
+            this.buttonSetGruzovik.Location = new System.Drawing.Point(596, 87);
             this.buttonSetGruzovik.Name = "buttonSetGruzovik";
             this.buttonSetGruzovik.Size = new System.Drawing.Size(127, 38);
             this.buttonSetGruzovik.TabIndex = 11;
-            this.buttonSetGruzovik.Text = "Задать танк";
+            this.buttonSetGruzovik.Text = "Задать Танк";
             this.buttonSetGruzovik.UseVisualStyleBackColor = true;
             this.buttonSetGruzovik.Click += new System.EventHandler(this.buttonSetGruzovik_Click);
             // 
@@ -172,7 +173,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 317);
+            this.label2.Location = new System.Drawing.Point(10, 320);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 14;
@@ -181,11 +182,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(248, 322);
+            this.label3.Location = new System.Drawing.Point(248, 319);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Вес";
+            this.label3.Text = "Масса";
             // 
             // label4
             // 
@@ -202,7 +203,6 @@
             this.textBoxToplivo.Name = "textBoxToplivo";
             this.textBoxToplivo.Size = new System.Drawing.Size(65, 20);
             this.textBoxToplivo.TabIndex = 17;
-            this.textBoxToplivo.TextChanged += new System.EventHandler(this.textBoxСapacity_TextChanged);
             // 
             // groupBox1
             // 
@@ -211,9 +211,9 @@
             this.groupBox1.Controls.Add(this.checkBoxBackSpoiler);
             this.groupBox1.Controls.Add(this.checkBoxSideSpoiler);
             this.groupBox1.Location = new System.Drawing.Point(596, 227);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(238, 137);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
