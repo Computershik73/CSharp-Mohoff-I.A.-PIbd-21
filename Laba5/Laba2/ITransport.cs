@@ -23,5 +23,7 @@ namespace Laba2
         int getToplivo();
 
         void setMainColor(Color color);
+
+        string getInfo();
     }
 }

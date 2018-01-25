@@ -22,6 +22,24 @@ base(maxSpeed, maxCountPassenger, maxCountToplivo, weight, color)
             this.Koleso = sideSpoiler;
             this.dopColor = dopColor;
         }
+
+        public Tank(string info):base (info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length==9)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountPassengers= Convert.ToInt32(strs[1]);
+                MaxCountToplivo=Convert.ToInt32(strs[2]);
+                Weight = Convert.ToInt32(strs[3]);
+                ColorBody = Color.FromName(strs[4]);
+                sideBamper = Convert.ToBoolean(strs[5]);
+                Zapaska= Convert.ToBoolean(strs[6]);
+                Koleso = Convert.ToBoolean(strs[7]);
+                dopColor= Color.FromName(strs[8]);
+
+            }
+        }
         protected override void drawLightCar(Graphics g)
         {
             if (sideBamper)
@@ -65,5 +83,11 @@ base(maxSpeed, maxCountPassenger, maxCountToplivo, weight, color)
 
         }
 
-}
+        public override string getInfo()
+        {
+            return MaxSpeed + ";" + MaxCountPassengers + ";" + MaxCountToplivo + ";" +
+                Weight + ";" + ColorBody.Name + ";" + sideBamper + ";" + Zapaska + ";" +
+                Koleso + ";" + dopColor.Name;
+        }
+    }
 }

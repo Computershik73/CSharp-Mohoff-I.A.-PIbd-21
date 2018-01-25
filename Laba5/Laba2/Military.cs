@@ -95,8 +95,30 @@ public override int MaxSpeed
             this.Weight = weight;
             this.countPassengers = 0;
             this.countToplivo = 0;
-            
+            //Random rand = new Random();
+            //startPosX = rand.Next(10, 200);
+            //startPosY = rand.Next(10, 200);
         }
+
+        public Military(string info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length == 5)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountPassengers= Convert.ToInt32(strs[1]);
+                MaxCountToplivo = Convert.ToInt32(strs[2]);
+                Weight= Convert.ToInt32(strs[3]);
+                ColorBody = Color.FromName(strs[4]);
+            }
+            this.countPassengers = 0;
+            Random rand = new Random();
+            startPosX = rand.Next(10, 200);
+            startPosY = rand.Next(10, 200);
+        }
+
+
+        
         public override void moveCar(Graphics g)
         {
             startPosX +=
@@ -137,6 +159,12 @@ public override int MaxSpeed
             g.FillRectangle(brR, startPosX -15, startPosY+80 , 5, 20);
 
 
+        }
+
+        public override string getInfo()
+        {
+            return MaxSpeed + ";" + MaxCountPassengers + ";" + MaxCountToplivo + ";"
+                + Weight + ";" + ColorBody.Name;
         }
     }
 }

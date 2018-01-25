@@ -55,5 +55,7 @@ namespace Laba2
         {
             ColorBody = color;
         }
+
+        public abstract string getInfo();
     }
 }

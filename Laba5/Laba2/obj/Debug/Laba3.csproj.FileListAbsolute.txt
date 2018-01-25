@@ -1,0 +1,50 @@
+D:\projects\Laba2\Laba2\bin\Debug\Laba2.exe.config
+D:\projects\Laba2\Laba2\bin\Debug\Laba2.exe
+D:\projects\Laba2\Laba2\bin\Debug\Laba2.pdb
+D:\projects\Laba2\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+D:\projects\Laba2\Laba2\obj\Debug\Laba2.Form1.resources
+D:\projects\Laba2\Laba2\obj\Debug\Laba2.Form2.resources
+D:\projects\Laba2\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+D:\projects\Laba2\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
+D:\projects\Laba2\Laba2\obj\Debug\Laba2.exe
+D:\projects\Laba2\Laba2\obj\Debug\Laba2.pdb
+D:\projects\Laba3 — копия\Laba2\bin\Debug\Laba2.exe.config
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba2.exe
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba2.pdb
+D:\projects\Laba3 — копия\Laba2\bin\Debug\Laba2.exe
+D:\projects\Laba3 — копия\Laba2\bin\Debug\Laba2.pdb
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba2.Form2.resources
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba2.FormDelectCar.resources
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+D:\projects\Laba3 — копия\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
+D:\projects\Laba6\Laba2\bin\Debug\Laba2.exe.config
+D:\projects\Laba6\Laba2\obj\Debug\Laba2.exe
+D:\projects\Laba6\Laba2\obj\Debug\Laba2.pdb
+D:\projects\Laba6\Laba2\bin\Debug\Laba2.exe
+D:\projects\Laba6\Laba2\bin\Debug\Laba2.pdb
+D:\projects\Laba6\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+D:\projects\Laba6\Laba2\obj\Debug\Laba2.Form2.resources
+D:\projects\Laba6\Laba2\obj\Debug\Laba2.FormDelectCar.resources
+D:\projects\Laba6\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+D:\projects\Laba6\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
+F:\Эгов - копия\Laba5\Laba2\bin\Debug\Laba2.exe.config
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba2.exe
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba2.pdb
+F:\Эгов - копия\Laba5\Laba2\bin\Debug\Laba2.exe
+F:\Эгов - копия\Laba5\Laba2\bin\Debug\Laba2.pdb
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba2.Form2.resources
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba2.FormDelectCar.resources
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+F:\Эгов - копия\Laba5\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\bin\Debug\Laba2.exe.config
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba2.exe
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba2.pdb
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\bin\Debug\Laba2.exe
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\bin\Debug\Laba2.pdb
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba2.Form2.resources
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba2.FormDelectCar.resources
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+C:\CSharp-Mohoff-I.A.-PIbd-21-laba1\Laba5\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
