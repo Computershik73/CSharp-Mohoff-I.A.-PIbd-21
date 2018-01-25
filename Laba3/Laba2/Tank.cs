@@ -41,12 +41,10 @@ base(maxSpeed, maxCountPassenger, maxCountToplivo, weight, color)
 
                 Brush brB = new SolidBrush(Color.Brown);
                 g.FillRectangle(brB, startPosX - 30, startPosY - 10, 250, 10);
-                //  g.FillRectangle(brB, startPosX + 160, startPosY -10, 40, 10);
-
+                
                 g.FillRectangle(brB, startPosX - 30, startPosY + 100, 250, 10);
                 g.FillRectangle(brB, startPosX + 10, startPosY + 45, 250, 10);
-                //  g.FillEllipse(brB, startPosX, startPosY, 100, 100);
-                // g.FillRectangle(brB, startPosX + 160, startPosY + 100, 40, 10);
+                
 
             }
             base.drawLightCar(g);
