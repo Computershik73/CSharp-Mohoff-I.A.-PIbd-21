@@ -14,10 +14,10 @@ namespace Laba2
         private bool Koleso;
         private Color dopColor;
         public Tank(int maxSpeed, int maxCountPassenger, int maxCountToplivo, double weight, Color color,
-        bool frontSpoiler, bool backSpoiler, bool sideSpoiler, Color dopColor) :
-base(maxSpeed, maxCountPassenger, maxCountToplivo, weight, color)
-        {
-            this.sideBamper = frontSpoiler;
+        bool frontSpoiler, bool backSpoiler, bool sideSpoiler, Color dopColor) : 
+base(maxSpeed, maxCountPassenger, maxCountToplivo, weight, color) 
+{
+            this.sideBamper= frontSpoiler;
             this.Zapaska = backSpoiler;
             this.Koleso = sideSpoiler;
             this.dopColor = dopColor;
@@ -59,7 +59,11 @@ base(maxSpeed, maxCountPassenger, maxCountToplivo, weight, color)
             }
         }
 
+        public void SetDopColor(Color color)
+        {
+            dopColor = color;
 
+        }
 
-    }
+}
 }
