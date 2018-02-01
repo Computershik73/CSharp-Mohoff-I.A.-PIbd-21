@@ -35,3 +35,13 @@ F:\Эгов - копия\Laba3\Laba2\obj\Debug\Laba2.Form1.resources
 F:\Эгов - копия\Laba3\Laba2\obj\Debug\Laba2.Form2.resources
 F:\Эгов - копия\Laba3\Laba2\obj\Debug\Laba2.Properties.Resources.resources
 F:\Эгов - копия\Laba3\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\bin\Debug\Laba2.exe.config
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba2.exe
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba2.pdb
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\bin\Debug\Laba2.exe
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\bin\Debug\Laba2.pdb
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba2.Form1.resources
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba2.Form2.resources
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+C:\labs\CSharp-Mohoff-I.A.-PIbd-21\Laba3\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache
