@@ -1,0 +1,12 @@
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\labaTP2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\labaTP2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\labaTP2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\obj\Debug\Laba3.csprojResolveAssemblyReference.cache
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\obj\Debug\WindowsFormsApplication1.Form.resources
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\user\Downloads\PIbd-21_ChubykinAP-Lab4C-\Laba3\Laba2\obj\Debug\Laba3.csproj.GenerateResource.Cache

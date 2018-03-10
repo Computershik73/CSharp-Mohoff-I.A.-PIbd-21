@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Laba2
+namespace WindowsFormsApplication1
 {
     static class Program
     {
@@ -16,8 +16,7 @@ namespace Laba2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Form1());
-            Application.Run(new Form2());
+            Application.Run(new Form());
         }
     }
 }

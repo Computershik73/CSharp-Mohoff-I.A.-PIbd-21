@@ -5,140 +5,132 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba2
+namespace WindowsFormsApplication1
 {
-   public  class Military:Vehicle
+    public class Military : Vehicle
     {
-        
-public override int MaxSpeed
+		protected float startPosX;
+		protected float startPosY;
+
+        public override int maxSpeed
         {
             get
             {
-                return base.MaxSpeed;
+                return base.maxSpeed;
             }
 
             protected set
             {
-                if (value > 0 && value < 300)
+                if (value > 0 && value < 40)
                 {
-                    base.MaxSpeed = value;
+                    base.maxSpeed = value;
                 }
                 else
                 {
-                    base.MaxSpeed = 150;
+                    base.maxSpeed = 20;
                 }
             }
         }
-        public override int MaxCountPassengers
+
+        public override int maxCrew
         {
             get
             {
-                return base.MaxCountPassengers;
+                return base.maxCrew;
             }
 
             protected set
             {
-                if (value > 0 && value < 5)
+                if (value > 100 && value < 400)
                 {
-                    base.MaxCountPassengers = value;
+                    base.maxCrew = value;
                 }
                 else
                 {
-                    base.MaxCountPassengers = 3;
+                    base.maxCrew = 300;
                 }
             }
         }
-        public override int MaxCountToplivo
+
+        public override double displacement
         {
             get
             {
-                return base.MaxCountToplivo;
+                return base.displacement;
             }
 
             protected set
             {
-                if (value > 5 && value < 15)
+                if (value > 8000 && value < 12000)
                 {
-                    base.MaxCountToplivo = value;
+                    base.displacement = value;
                 }
                 else
                 {
-                    base.MaxCountToplivo = 10;
+                    base.displacement = 9000;
                 }
             }
         }
-        public override double Weight
-        {
-            get
-            {
-                return base.Weight;
-            }
 
-            protected set
-            {
-                if (value > 1500 && value < 3000)
-                {
-                    base.Weight = value;
-                }
-                else
-                {
-                    base.Weight = 1500;
-                }
-            }
-        }
-        public Military(int maxSpeed, int maxCountPassengers, int maxCountToplivo, double weight, Color color)
+        public Military(int maxSpeed, int maxCrew, double displacement, Color color1, Color color2)
         {
-            this.MaxSpeed = maxSpeed;
-            this.MaxCountPassengers = maxCountPassengers;
-            this.MaxCountToplivo = maxCountToplivo;
-            this.ColorBody = color;
-            this.Weight = weight;
-            this.countPassengers = 0;
-            this.countToplivo = 0;
-            //Random rand = new Random();
-            //startPosX = rand.Next(10, 200);
-            //startPosY = rand.Next(10, 200);
+            this.maxSpeed = maxSpeed;
+            this.maxCrew = maxCrew;
+            this.ColorBody1 = color1;
+            this.ColorBody2 = color2;
+            this.displacement = displacement;
+            this.CrewCount = 0;
+            Random rand = new Random();
+            startPosX = rand.Next(10, 200);
+            startPosY = rand.Next(10, 200);
         }
+
         public override void moveCar(Graphics g)
         {
-            startPosX +=
-            (MaxSpeed * 50 / (float)Weight) /
-            (countToplivo == 0 ? 1 : countToplivo);
+            startPosX += (maxSpeed * 50 / ((float)displacement / 100)) / (CrewCount == 0 ? 1 : CrewCount);
             drawCar(g);
         }
+
         public override void drawCar(Graphics g)
         {
-            drawLightCar(g);
+            drawNormalSudno(g);
         }
-        protected virtual void drawLightCar(Graphics g)
+
+        protected virtual void drawNormalSudno(Graphics g)
         {
-            //границы машины 
-       
-            //кузов 
-            Brush br = new SolidBrush(ColorBody);
+            
+            Brush grayB = new SolidBrush(ColorBody1);
+            Brush brownB = new SolidBrush(Color.SandyBrown);
+            Brush grayDB = new SolidBrush(ColorBody2);
+
+            Brush br = new SolidBrush(ColorBody1);
             g.FillRectangle(br, startPosX, startPosY, 150, 100);
-            g.FillRectangle(br, startPosX + 180, startPosY , 30, 100);
+            g.FillRectangle(br, startPosX + 180, startPosY, 30, 100);
 
             //стекла 
             Brush brBlue = new SolidBrush(Color.LightBlue);
-            g.FillRectangle(brBlue, startPosX-10, startPosY, 10, 100);
+            g.FillRectangle(brBlue, startPosX - 10, startPosY, 10, 100);
             g.FillRectangle(brBlue, startPosX + 150, startPosY, 30, 100);
 
             //выделяем рамкой крышу 
             Pen pen = new Pen(Color.Black);
             g.DrawRectangle(pen, startPosX, startPosY, 150, 100);
             g.DrawRectangle(pen, startPosX + 180, startPosY, 30, 100);
-            g.DrawRectangle(pen, startPosX-10, startPosY, 220, 100);
+            g.DrawRectangle(pen, startPosX - 10, startPosY, 220, 100);
 
             //фары
             Brush brY = new SolidBrush(Color.Yellow);
-            g.FillRectangle(brY, startPosX+200, startPosY, 10, 30);
-            g.FillRectangle(brY, startPosX + 200, startPosY+70, 10, 30);
+            g.FillRectangle(brY, startPosX + 200, startPosY, 10, 30);
+            g.FillRectangle(brY, startPosX + 200, startPosY + 70, 10, 30);
             Brush brR = new SolidBrush(Color.Red);
-            g.FillRectangle(brR, startPosX -15, startPosY, 5, 20);
-            g.FillRectangle(brR, startPosX -15, startPosY+80 , 5, 20);
-
-
+            g.FillRectangle(brR, startPosX - 15, startPosY, 5, 20);
+            g.FillRectangle(brR, startPosX - 15, startPosY + 80, 5, 20);
         }
+
+		public override void setPos(int x, int y)
+		{
+			startPosX = x;
+			startPosY = y;
+		}
     }
 }

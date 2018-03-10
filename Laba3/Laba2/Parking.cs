@@ -5,88 +5,82 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba2
+namespace WindowsFormsApplication1
 {
     class Parking
     {
-        ClassArray<ITransport> parking;
-        
-        List< ClassArray<ITransport>> parkingStages;
-        int countPlaces = 20;
-        int placesSizeWidth = 250;
-        int placeSizeHight = 150;
-        int currentLevel;
+        List<Port<ITransport>> pStages;
+        int countPlaces = 15;
+        int placeSizeWidth = 210;
+        int placeSizeHeight = 80;
+        int currentLVL;
+        public int getLVL { get { return currentLVL; } }
 
-        public int getCurrentLevel { get { return currentLevel; } }
         public Parking(int countStages)
-       {
-            parkingStages = new List<ClassArray<ITransport>>(countStages);
+        {
+            pStages = new List<Port<ITransport>>(countStages);
             for (int i = 0; i < countStages; i++)
             {
-                parking= new ClassArray<ITransport>(countPlaces,null);
-                parkingStages.Add(parking);
+                pStages.Add(new Port<ITransport>(countPlaces, null));
             }
-            
         }
 
         public void LevelUp()
         {
-            if (currentLevel + 1 < parkingStages.Count)
+            if(currentLVL + 1 < pStages.Count)
             {
-                currentLevel++;
+                currentLVL++;
             }
         }
+
         public void LevelDown()
         {
-            if(currentLevel>0)
-                {
-                currentLevel--;
+            if (currentLVL > 0)
+            {
+                currentLVL--;
             }
         }
 
-        public int PutCarInParking(ITransport car)
+        public int PutInParking(ITransport ship)
         {
-            return parkingStages[currentLevel] + car;
+            return pStages[currentLVL] + ship;
         }
-        public ITransport GetCarInParking(int ticket)
+
+        public ITransport GetInParking(int ticket)
         {
-            return parkingStages[currentLevel] - ticket;
+            return pStages[currentLVL] - ticket;
         }
-        public void Draw(Graphics g,int width, int heigt)
-        {
-            DrawMarking(g);
-            for (int i = 0; i < countPlaces; i++)
-            {
-                var car = parkingStages[currentLevel][i];
-                if (car!=null)
-                {
-                    car.setPosition(5 + i / 5 * placesSizeWidth + 25, i % 5 * placeSizeHight + 15);
-                    car.drawCar(g);
-                }
-            }
-        }
-        private void DrawMarking(Graphics g)
+
+        public void DrawPort(Graphics g)
         {
             Pen pen = new Pen(Color.Black, 3);
-
-            g.DrawString("L" + (currentLevel + 1), new Font("Arial", 30), new SolidBrush(Color.Blue), (countPlaces / 5) * placesSizeWidth - 70, 420);
-
-            g.DrawRectangle(pen, 0, 0, (countPlaces / 2) * placeSizeHight, 600);
-            g.DrawLine(pen, 0, placeSizeHight,50, placeSizeHight);
-            g.DrawLine(pen, 0, placeSizeHight+150, 50, placeSizeHight+150);
-            g.DrawLine(pen, 0, placeSizeHight+300, 50, placeSizeHight+300);
-            for (int i=0;i<countPlaces/5;i++)
+            g.DrawString("P" + (currentLVL + 1), new Font("Arial", 30), new SolidBrush(Color.Blue), (countPlaces / 5) * placeSizeWidth - 70, 420);
+            g.DrawRectangle(pen, 0, 0, (countPlaces / 5) * placeSizeWidth, 480);
+            for(int i = 0; i < countPlaces / 5; i++)
             {
-                for (int j=0;j<6;j++)
+                for (int j = 0; j < 6; ++j)
                 {
-                    g.DrawLine(pen, i * placesSizeWidth+20, j * placeSizeHight,i * placesSizeWidth + 150, j * placeSizeHight);
-                   if(j<5)
+                    g.DrawLine(pen, i * placeSizeWidth, j * placeSizeHeight, i * placeSizeWidth + 110, j * placeSizeHeight);
+                    if (j < 5)
                     {
-                        g.DrawString((i * 5 + j + 1).ToString(), new Font("Arial", 30), new SolidBrush(Color.Blue), i * placesSizeWidth + 30, j * placeSizeHight + 20);
+                        g.DrawString((i * 5 + j + 1).ToString(), new Font("Arial", 30), new SolidBrush(Color.Blue), i * placeSizeWidth + 30, j * placeSizeHeight + 20);
                     }
                 }
-                
-                g.DrawLine(pen, i * placesSizeWidth+270, 0, i * placesSizeWidth+270, 700);
+                g.DrawLine(pen, i * placeSizeWidth, 0, i * placeSizeWidth, 400);
+            }
+        }
+
+        public void Draw(Graphics g)
+        {
+            DrawPort(g);
+            for(int i = 0; i < countPlaces; i++)
+            {
+                var ship = pStages[currentLVL][i];
+                if (ship != null)
+                {
+                    ship.setPos(20 + i / 5 * placeSizeWidth, i % 5 * placeSizeHeight + 15);
+                    ship.drawCar(g);
+                }
             }
         }
     }
