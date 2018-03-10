@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Laba2.Properties
+namespace WindowsFormsApplication1.Properties
 {
 
 

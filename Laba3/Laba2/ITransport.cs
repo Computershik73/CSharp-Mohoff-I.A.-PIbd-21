@@ -5,21 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba2
+namespace WindowsFormsApplication1
 {
-    public interface ITransport
+    interface ITransport
     {
-       
         void moveCar(Graphics g);
-
         void drawCar(Graphics g);
-
-        void setPosition(int x, int y);
-
-        void loadPassenger(int count);
-
-        void loadToplivo(int count);
-        int getPassenger();
-        int getToplivo();
+        void setPos(int x, int y);
+        void loadCrew(int count);
+        int getCrew();
     }
 }

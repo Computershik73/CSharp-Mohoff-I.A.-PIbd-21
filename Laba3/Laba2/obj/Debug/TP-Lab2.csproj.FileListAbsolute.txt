@@ -1,0 +1,42 @@
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TP-Lab2.csprojResolveAssemblyReference.cache
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TP-Lab2.csproj.GenerateResource.Cache
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\users\$анек\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\$анек\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form.resources
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\obj\Debug\TP-Lab2.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form.resources
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\user\Desktop\labaTP\WindowsFormsApplication1\obj\Debug\TP-Lab2.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\labaTP(изм)\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Desktop\labaTP(изм)\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Desktop\labaTP(изм)\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\obj\Debug\TP-Lab2.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form.resources
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\obj\Debug\TP-Lab2.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\user\Desktop\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\TP-Lab2.csprojResolveAssemblyReference.cache
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form.resources
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\учеба\Учёба\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\TP-Lab2.csproj.GenerateResource.Cache
+I:\ООП\labaTP3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+I:\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+I:\ООП\labaTP3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

@@ -8,124 +8,112 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Laba2
+namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
-        Color color;
-        Color dopColor;
-        int maxSpeed;
-        int maxCountPass;
-        int maxCountCapa;
-        int weight;
+        Parking parking;
 
-        private ITransport inter;
-        public Form1()
+        public Form()
         {
             InitializeComponent();
-            color = Color.Red;
-            dopColor = Color.Yellow;
-            maxSpeed = 150;
-            maxCountPass = 4;
-            weight = 1500;
-            buttonSelectColor.BackColor = color;
-            buttonSelectDopColor.BackColor = dopColor;
+            parking = new Parking(5);
+            for (int i = 1; i < 6; i++)
+            {
+                listBox1.Items.Add("Порт №" + i);
+            }
+            listBox1.SelectedIndex = parking.getLVL;
+            DrawPort();
         }
 
-        private void buttonSelectColor_Click(object sender, EventArgs e)
+        private void DrawPort()
         {
-            ColorDialog cd = new ColorDialog();
-            if (cd.ShowDialog() == DialogResult.OK)
+            if (listBox1.SelectedIndex > -1)
             {
-                color = cd.Color;
-                buttonSelectColor.BackColor = color;
-            }
-        }
-
-        private void buttonSelectDopColor_Click(object sender, EventArgs e)
-        {
-            ColorDialog cd = new ColorDialog();
-            if (cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                dopColor = cd.Color;
-                buttonSelectDopColor.BackColor = dopColor;
-            }
-        }
-
-        private bool checkFields()
-        {
-            if (!int.TryParse(textBoxMaxSpeed.Text, out maxSpeed))
-            {
-                return false;
-            }
-            if (!int.TryParse(textBoxMaxCountPassenget.Text, out maxCountPass))
-            {
-                return false;
-            }
-            if (!int.TryParse(textBoxToplivo.Text, out maxCountCapa))
-            {
-                return false;
-            }
-            if (!int.TryParse(textBoxWeight.Text, out weight))
-            {
-                return false;
-            }
-            return true;
-        }
-
-        private void buttonSetAuto_Click(object sender, EventArgs e)
-        {
-            if (checkFields())
-            {
-                inter = new Military(maxSpeed, maxCountPass, maxCountCapa, weight, color);
-                Bitmap bmp = new Bitmap(pictureBoxDraw.Width, pictureBoxDraw.Height);
+                Bitmap bmp = new Bitmap(picture.Width, picture.Height);
                 Graphics gr = Graphics.FromImage(bmp);
-                inter.drawCar(gr);
-                pictureBoxDraw.Image = bmp;
+                parking.Draw(gr);
+                picture.Image = bmp;
             }
         }
 
-        private void buttonSetSportSedan_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            inter = new Tank(150, 4, 7, 1000, Color.Black, true, true, true, Color.Yellow);
-            Bitmap bmp = new Bitmap(pictureBoxDraw.Width, pictureBoxDraw.Height);
-            Graphics gr = Graphics.FromImage(bmp);
-            inter.drawCar(gr);
-            pictureBoxDraw.Image = bmp;
-        }
-
-        private void buttonMove_Click(object sender, EventArgs e)
-        {
-            if (inter != null)
+            ColorDialog dialog = new ColorDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                Bitmap bmp = new Bitmap(pictureBoxDraw.Width, pictureBoxDraw.Height);
-                Graphics gr = Graphics.FromImage(bmp);
-                inter.moveCar(gr);
-                pictureBoxDraw.Image = bmp;
+                ColorDialog dialogDop = new ColorDialog();
+                if (dialogDop.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    var ship = new Military(30, 300, 9000, dialog.Color, dialogDop.Color);
+                    int place = parking.PutInParking(ship);
+                    DrawPort();
+                    MessageBox.Show("Ваше место: " + (place + 1));
+                }
             }
+
         }
 
-        private void buttonSetGruzovik_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (checkFields())
+            ColorDialog dialog = new ColorDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                inter = new Tank(maxSpeed, maxCountPass, maxCountCapa, weight, color, checkBoxFrontSpoiler.Checked,
-                checkBoxBackSpoiler.Checked, checkBoxSideSpoiler.Checked, dopColor);
-                Bitmap bmp = new Bitmap(pictureBoxDraw.Width, pictureBoxDraw.Height);
-                Graphics gr = Graphics.FromImage(bmp);
-                inter.drawCar(gr);
-                pictureBoxDraw.Image = bmp;
+                ColorDialog dialogDop = new ColorDialog();
+                if (dialogDop.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    ColorDialog dialogDopp = new ColorDialog();
+                    if (dialogDopp.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        var ship = new Tank(30, 300, 9000, dialog.Color, true, true, dialogDop.Color, dialogDopp.Color);
+                        int place = parking.PutInParking(ship);
+                        DrawPort();
+                        MessageBox.Show("Ваше место: " + (place + 1));
+                    }
+                }
+
             }
         }
 
-        private void pictureBoxDraw_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            string LVL = listBox1.Items[listBox1.SelectedIndex].ToString();
+            if (maskedTextBox1.Text != "")
+            {
+                ITransport ship = parking.GetInParking(Convert.ToInt32(maskedTextBox1.Text) - 1);
+                if (ship != null)
+                {
+                    Bitmap bmp = new Bitmap(pictureTake.Width, pictureTake.Height);
+                    Graphics gr = Graphics.FromImage(bmp);
+                    ship.setPos(15, 10);
+                    ship.drawCar(gr);
+                    pictureTake.Image = bmp;
+                    DrawPort();
+                }
+                else
+                {
+                    MessageBox.Show("Здесь пусто");
+                }
+            }
         }
 
-        private void textBoxСapacity_TextChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            parking.LevelUp();
+            listBox1.SelectedIndex = parking.getLVL;
+            DrawPort();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            parking.LevelDown();
+            listBox1.SelectedIndex = parking.getLVL;
+            DrawPort();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        { }
+        private void label1_Click(object sender, EventArgs e)
+        { }
     }
-
-    }
+}
