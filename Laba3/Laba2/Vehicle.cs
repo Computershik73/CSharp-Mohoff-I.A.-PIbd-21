@@ -50,8 +50,10 @@ namespace Laba2
             int count = countToplivo;
             countToplivo = 0;
             return count;
-
-
+        }
+        public virtual void setMainColor(Color color)
+        {
+            ColorBody = color;
         }
     }
 }

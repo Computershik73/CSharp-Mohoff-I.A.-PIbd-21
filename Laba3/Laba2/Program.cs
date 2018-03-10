@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace Laba2
 {
+    public delegate void myDel(Laba2.ITransport car);
     static class Program
     {
         /// <summary>
@@ -14,6 +15,7 @@ namespace Laba2
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new Form1());

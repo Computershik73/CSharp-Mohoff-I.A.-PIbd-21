@@ -15,6 +15,7 @@ namespace Laba2
 
 
         Parking parking;
+        FormDelectCar form;
         int placesSizeWidth = 250;
         int placeSizeHight = 150;
 
@@ -63,19 +64,29 @@ namespace Laba2
 
         private void buttonSetCar_Click_1(object sender, EventArgs e)
         {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                var car = new Military(100, 4, 10, 1600, dialog.Color);
-                int place = parking.PutCarInParking(car);
-                Draw();
-                MessageBox.Show("Ваше место: " + place);
-            }
+            form = new FormDelectCar();
+            form.AddEvent(AddCar);
+            form.Show();
 
         }
-       
-       
-       
+
+        private void AddCar(ITransport car)
+        {
+            if (car != null)
+            {
+                int place = parking.PutCarInParking(car);
+                if (place > -1)
+                {
+                    Draw();
+                    MessageBox.Show("Ваше место: " + place);
+                }
+                else
+                {
+                    MessageBox.Show("Машину не удалось поставить");
+                }
+            }
+        }
+
 
         private void buttonSetVnedorozhnik_Click(object sender, EventArgs e)
         {
