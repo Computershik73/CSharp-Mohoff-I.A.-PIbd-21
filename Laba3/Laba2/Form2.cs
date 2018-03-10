@@ -15,7 +15,7 @@ namespace Laba2
 
 
         Parking parking;
-        FormDelectCar form;
+        //FormDelectCar form;
         int placesSizeWidth = 250;
         int placeSizeHight = 150;
 
@@ -125,7 +125,7 @@ namespace Laba2
                     }
                     else
                     {//иначе сообщаем об этом
-                        MessageBox.Show("Извинте, на этом месте нет машины");
+                        MessageBox.Show("Извините, на этом месте нет машины");
                     }
                 }
             }
